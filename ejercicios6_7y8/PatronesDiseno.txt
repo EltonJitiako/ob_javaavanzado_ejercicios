@@ -1,0 +1,15 @@
+## Patrones de diseño
+
+* Singleton: creación de una instancia única. Ejemplo: en caso de tener que usar muchas veces la instancia de una determinada clase.
+
+* Factory: a través de una clase factory, se relaciona los objetos de las clases hijas. Ejemplo: dependiendo de la clase hija tenemos distintos valores a considerar para una variable.
+
+* Builder: ayuda en la creacion de objetos complejos. Ejemplo: Tengo una clase persona que tiene muchos atributos, y puede ser que tenga que agregar mas en futuro.
+
+* Prototype: consiste en la clonación de un objeto. Ejemplo: En caso de necesitar utilizar los atributos y valores existentes.
+
+* Decorator: añadir nuevas funcionalidades a una clase. Elemplo: De una clase base se pude anadir mas un metodo(s) o un atributo(s), y no necessta cambiar nada en la clase base.
+
+* Adapter: hacer una clase compatible con el resto del codigo. Ejemplo: En caso de tener una clase que no se puede cambiar, pero esta clase tambien no se comunica con el codigo actual, se crea un adapter para hacer esta comunicacion.
+
+* Facade: hace como una interfaz simples de algo mas complejo. Ejemplo: Se tienes muchas clases con muchos metodos y atributos, pero, ao final solo necesita enviar algo sencillo y recibr algo sencillo tambien, se pude hacer una interfaz facade para enviar y recibir.
