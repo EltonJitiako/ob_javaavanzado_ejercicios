@@ -2,34 +2,34 @@ package org.example;
 
 public class SmartWatch extends SmartDevice {
 
-    String colorCorrea;
+    String sColorCorrea;
 
     private SmartWatch () {}
 
-    public SmartWatch(String marca) { this.marca = marca; }
+    public SmartWatch(String sMarca) { this.sMarca = sMarca; }
 
     public String getMarca() {
-        return marca;
+        return sMarca;
     }
 
     public String getModelo() {
-        return modelo;
+        return sModelo;
     }
 
     public double getPantalla() {
-        return pantalla;
+        return dPantalla;
     }
 
     public double getPeso() {
-        return peso;
+        return dPeso;
     }
 
     public double getPrecio() {
-        return precio;
+        return dPrecio;
     }
 
     public String getColorCorrea() {
-        return colorCorrea;
+        return sColorCorrea;
     }
 
 }

@@ -1,31 +1,31 @@
 package org.example;
 
 public class SmartPhone extends SmartDevice {
-    String simCard;
+    String sSimCard;
 
     private SmartPhone() {}
 
-    public SmartPhone(String marca) { this.marca = marca; }
+    public SmartPhone(String sMarca) { this.sMarca = sMarca; }
 
     public String getMarca() {
-        return marca;
+        return sMarca;
     }
 
     public String getModelo() {
-        return modelo;
+        return sModelo;
     }
 
     public double getPantalla() {
-        return pantalla;
+        return dPantalla;
     }
 
     public double getPeso() {
-        return peso;
+        return dPeso;
     }
 
     public double getPrecio() {
-        return precio;
+        return dPrecio;
     }
 
-    public String getCSimCard() { return simCard; }
+    public String getSimCard() { return sSimCard; }
 }

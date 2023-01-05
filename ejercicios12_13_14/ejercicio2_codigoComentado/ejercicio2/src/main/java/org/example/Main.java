@@ -2,13 +2,12 @@ package org.example;
 
 
 /**
- * Ejercicios 9, 10 y 11 - ejercicio 2 Java Avanzado
- * Ejercicio extraido de ejercicio 4 Java Basico - "En este ejercicio tendréis que crear una clase SmartDevice. Dentro crearéis las clases hijas: SmartPhone y SmartWatch. Agregaréis atributos tal cual tendrían esos objetos en la realidad. Crear constructor vacío y con todos los parámetros para cada clase. Desde una clase Main: crearéis objetos de cada una y los utilizaréis para imprimir sus valores por consola."
- * *********************************************************
- * Refactorado con patron Builder y tambien fue hecho una clase PrintWithComas con sobrecarga para dejar sencillo la imprecion de los datos.
+ * Codigo para anadir devices (SmartPhones y SmartWatches) en una lista.
  */
 public class Main {
+
         public static void main(String[] args) {
+
 
                 PrintWithComas print = new PrintWithComas();
 

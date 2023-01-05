@@ -6,33 +6,33 @@ public class SmartWatchBuilder {
     SmartWatch smartWatch;
 
     private SmartWatchBuilder() {};
-    public SmartWatchBuilder(String marca) {
-        smartWatch = new SmartWatch(marca);
-        smartWatch.marca = marca;
+    public SmartWatchBuilder(String sMarca) {
+        smartWatch = new SmartWatch(sMarca);
+        smartWatch.sMarca = sMarca;
     }
 
-    public SmartWatchBuilder setModelo(String modelo) {
-        smartWatch.modelo = modelo;
+    public SmartWatchBuilder setModelo(String sModelo) {
+        smartWatch.sModelo = sModelo;
         return this;
     }
 
-    public SmartWatchBuilder setPantalla(double pantalla) {
-        smartWatch.pantalla = pantalla;
+    public SmartWatchBuilder setPantalla(double dPantalla) {
+        smartWatch.dPantalla = dPantalla;
         return this;
     }
 
-    public SmartWatchBuilder setPeso(double peso) {
-        smartWatch.peso = peso;
+    public SmartWatchBuilder setPeso(double dPeso) {
+        smartWatch.dPeso = dPeso;
         return this;
     }
 
-    public SmartWatchBuilder setPrecio(double precio) {
-        smartWatch.precio = precio;
+    public SmartWatchBuilder setPrecio(double dPrecio) {
+        smartWatch.dPrecio = dPrecio;
         return this;
     }
 
-    public SmartWatchBuilder setColorCorrea(String colorCorrea) {
-        smartWatch.colorCorrea = colorCorrea;
+    public SmartWatchBuilder setColorCorrea(String sColorCorrea) {
+        smartWatch.sColorCorrea = sColorCorrea;
         return this;
     }
 
