@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * Clase hija de SmartDevice. Recibe los atributos de lo padre y anadi mas atributos.
+ */
 public class SmartWatch extends SmartDevice {
 
     String sColorCorrea;

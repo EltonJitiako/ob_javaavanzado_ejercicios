@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * Funciones para imprimir los atributos de los objetos con coma.
+ */
 public class PrintWithComas {
 
     public void device(SmartPhone mobile) {
@@ -8,7 +11,7 @@ public class PrintWithComas {
                 + mobile.getPantalla() + ", "
                 + mobile.getPeso() + ", "
                 + mobile.getPrecio() + ", "
-                + mobile.getCSimCard());
+                + mobile.getSimCard());
     }
 
     public void device(SmartWatch mobile) {
