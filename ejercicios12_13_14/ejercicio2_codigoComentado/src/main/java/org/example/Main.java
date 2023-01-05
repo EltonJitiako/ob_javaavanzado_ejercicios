@@ -1,6 +1,5 @@
 package org.example;
 
-
 /**
  * Codigo para anadir devices (SmartPhones y SmartWatches) en una lista.
  */
