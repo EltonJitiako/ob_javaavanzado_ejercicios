@@ -1,0 +1,21 @@
+Una arquitectura limpia (o Clean Architecture) debe tener una separación de las capas de separación de principios clara.
+
+Capa entidades = lógica de negocios (nivel más alto). 
+
+Capa casos de uso = Son las reglas de aplicación que deben tener las clases.
+
+Capa de interfaces adaptadoras = funciones que implementan aciones.
+
+Capa controller = frameworks, drivers. La ultima capa, que normalmente se comunica com base de datos, por ejemplo.
+
+Para ayudarnos a implementar esas capas tenemos SOLID.
+
+S (Single-responsibility principle) = una clase debe tener solamente uma responsabilidad.
+
+O (Open–closed principle) = las entidades debem estar abiertas para estender, pero cerradas para modificarlas (clase abstracta)
+
+L (Liskov substitution principle) = una clase hija puede ser substituida pela clase padre. Ou sea, una hierarquia fácil de entender y reutilizar.
+
+I (Interface segregation principle) = segregacion de interfaces, una clase no puede depender de una interface que no vas utilizar.
+
+D (Dependency inversion principle) = as dependencias debem abstraer. Implementar métodos abstractos de forma genérica para desacoplar los códigos.
