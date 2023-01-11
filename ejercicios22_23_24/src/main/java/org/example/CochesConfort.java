@@ -17,11 +17,11 @@ public class CochesConfort extends Coches{
     }
 
     private boolean ConfortTest(Coche coche, boolean airCon, int numPortas) {
-        if (coche.getAirCon() != airCon) {
+        if (coche.airCon != airCon) {
             return false;
         }
 
-        if (coche.getNumPortas() != numPortas) {
+        if (coche.numPortas != numPortas) {
             return false;
         }
 

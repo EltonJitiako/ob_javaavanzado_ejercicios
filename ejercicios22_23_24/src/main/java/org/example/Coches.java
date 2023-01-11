@@ -17,8 +17,8 @@ public class Coches {
     }
 
     public Coche getCoche(String modelo) {
-        Coche coche = new Coche.Builder().build();
-        coche.setModelo(modelo);
+        Coche coche = new CocheCombustible();
+        coche.modelo = modelo;
 
         return cochesDB.find(coche);
     }
@@ -32,8 +32,8 @@ public class Coches {
     }
 
     public void deleteCoche (String modelo) {
-        Coche coche = new Coche.Builder().build();
-        coche.setModelo(modelo);
+        Coche coche = new CocheCombustible();
+        coche.modelo = modelo;
 
         cochesDB.delete(coche);
     }

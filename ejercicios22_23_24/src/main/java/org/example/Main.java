@@ -8,33 +8,28 @@ package org.example;
  */
 public class Main {
     public static void main(String[] args) {
-        Coche coche1 = new Coche.Builder()
-                .setMarca("Citroen")
-                .setModelo("C3")
-                .setPotencia(1.2)
-                .setNumPortas(2)
-                .setAirCon(false)
-                .build();
+        Coche coche1 = new CocheCombustible();
+        coche1.marca = "Citroen";
+        coche1.modelo = "C3";
+        coche1.potencia = 1.2;
+        coche1.numPortas = 2;
+        coche1.airCon = false;
 
-        Coche coche2 = new Coche.Builder()
-                .setMarca("Audi")
-                .setModelo("A5")
-                .setPotencia(2.4)
-                .setNumPortas(4)
-                .setAirCon(true)
-                .build();
+        Coche coche2 = new CocheElectrico();
+        coche2.marca = "Audi";
+        coche2.modelo = "A5";
+        coche2.potencia = 2.4;
+        coche2.numPortas = 4;
+        coche2.airCon = true;
 
-        Coche coche3 = new Coche.Builder()
-                .setMarca("FIAT")
-                .setModelo("500")
-                .setPotencia(1.0)
-                .setNumPortas(2)
-                .setAirCon(true)
-                .build();
+        Coche coche3 = new CocheHibrido();
+        coche3.marca = "FIAT";
+        coche3.modelo = "500";
+        coche3.potencia = 1.0;
+        coche3.numPortas = 2;
+        coche3.airCon = true;
 
-        CochesDB cochesDB;
-
-        cochesDB = new CochesDBFile();
+        CochesDB cochesDB = new CochesDB();
 
         Coches coches = new Coches(cochesDB);
         coches.setCoche(coche1);
@@ -42,7 +37,7 @@ public class Main {
         coches.setCoche(coche3);
 
         Coche marcaCoche = coches.getCoche("C3");
-        System.out.println("Marca de coche obtenido: " + marcaCoche.getMarca());
+        System.out.println("Marca de coche obtenido: " + marcaCoche.marca);
         System.out.println("**********************");
 
         coches.deleteCoche("A5");
