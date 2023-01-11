@@ -1,10 +1,6 @@
 package org.example;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 abstract class CochesDB {
 
