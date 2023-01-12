@@ -54,8 +54,12 @@ public class Main {
         System.out.println("Este coche es confortable?      " + cochesComf.itIsConfortable(coche1));
         System.out.println("Este coche no es confortable?   " + cochesComf.itIsNotConfortable(coche1));
 
-        CochesRandomData cochesRD = new CochesDBFile();
-        cochesRD.random();
+        if(cochesDB instanceof CochesDBFile) {
+            ((CochesDBFile)cochesDB).random();
+        } else {
+            ((CochesDBMemory)cochesDB).random();
+        }
+
 
     }
 }
